@@ -8,4 +8,14 @@ export const Container = styled.div`
     color: #333;
     border-bottom: 1px solid #eaeaea;
     padding-left: 255px; // 255px is the width of the aside bar
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+export const Wrapper = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 10px;
 `;
