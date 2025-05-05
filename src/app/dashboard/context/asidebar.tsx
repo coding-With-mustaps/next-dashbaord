@@ -1,9 +1,15 @@
 "use client";
 import { createContext, useContext, useReducer } from "react";
 
-type AsidebarContextType = {
-    isOpen: boolean;
-    dispatch?: React.Dispatch<any>;
+
+type asidebarState = {
+    isOpen: boolean
+};
+
+type Action = "OPEN" | "CLOSE";
+
+type AsidebarContextType = asidebarState & {
+    dispatch: React.Dispatch<any>;
 };
 
 type Props = {
@@ -11,13 +17,13 @@ type Props = {
 };
 
 const initialState = {
-    isOpen: false
+    isOpen: true
 };
 
 const asidebarContext = createContext<AsidebarContextType | null>(null);
 
-const reducer = (state: AsidebarContextType, action: string) => {
-    switch(action){
+const reducer = (state: asidebarState, action: {type: "OPEN" | "CLOSE"}) => {
+    switch(action.type){
         case 'OPEN':
             return { isOpen: true };
         case 'CLOSE':
@@ -30,7 +36,7 @@ const reducer = (state: AsidebarContextType, action: string) => {
 export const AsideBarContextProvider = ({ children }: Props) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
-    return <asidebarContext.Provider value={{dispatch, ...state}}>
+    return <asidebarContext.Provider value={{...state, dispatch}}>
         { children }
     </asidebarContext.Provider>
 };
