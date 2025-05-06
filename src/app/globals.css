@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --link-color: #6198e0;
+  --link-hover-color: #1a73e8;
+  --link-hover-bgcolor: #f0f4ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +18,8 @@
     --foreground: #ededed;
   }
 }
+
+
 
 body {
   color: var(--foreground);

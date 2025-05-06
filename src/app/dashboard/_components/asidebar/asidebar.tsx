@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useAsidebarContext } from "../../context/asidebar";
 import { Container, IconContainer } from "./asidebar-style";
 import { Icon } from "./closeOpenIcon";
+import { Title } from "../title/title";
+import { SidebarLinks } from "../sidebar-links/sidebar-links";
 
 export default function AsideBar(){
     const { isOpen, dispatch} = useAsidebarContext();
@@ -20,7 +22,8 @@ export default function AsideBar(){
     return(
         <Container $isopen={isOpen ? "true" : "false"}>
             <Icon />
-            <h1>Aside bar</h1>
+            <Title />
+            <SidebarLinks />
         </Container>
     )
 };
