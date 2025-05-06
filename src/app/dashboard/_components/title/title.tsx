@@ -10,13 +10,15 @@ const H2 = styled.h2`
     align-items: center;
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #333;
     height: ${HEADER_HEIGHT}px;
     border-bottom: 1px solid #ccc;
 
 `;
+
+// 'Montserrat'
 export function Title(){
     return(
         <H2>Yes</H2>
