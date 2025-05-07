@@ -17,14 +17,7 @@ export const List = styled.li`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    // a {
-    //     width: 100%;
-    //     font-size: 1.2rem;
-    //     display: block;
-    //     padding-left: 5px;
-    // }
-
+    
     a {
         display: flex;
         align-items: center;

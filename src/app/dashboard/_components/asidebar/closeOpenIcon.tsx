@@ -16,5 +16,5 @@ export function Icon(){
                 <TfiArrowCircleLeft onClick={() => dispatch({type: "CLOSE"})} className="icon"/> : 
                 <TfiArrowCircleRight onClick={() => dispatch({type: "OPEN"})} className="icon open"/>}
         </IconContainer>
-        )
+    )
 };

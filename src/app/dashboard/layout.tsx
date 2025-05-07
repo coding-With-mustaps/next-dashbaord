@@ -1,7 +1,6 @@
 import AsideBar from "./_components/asidebar/asidebar";
 import Header from "./_components/header/header";
 import { AsideBarContextProvider } from "./context/asidebar";
-import { Wrapper } from "./layout-styles";
 import { MainWrapper } from "./utils/childrenMainWrapper";
 
 export const metadata = {

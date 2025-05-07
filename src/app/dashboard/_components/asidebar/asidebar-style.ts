@@ -12,9 +12,9 @@ export const Container = styled.div<Props>`
     left: 0;
     width: ${ASIDEBAR_WIDTH}px;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--sidebar-header-background);
     color: #333;
-    border-right: 1px solid #eaeaea;
+    border-right: 1px solid var(--sidebar-header-border-color);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transform: translateX(${({ $isopen }) => ($isopen === "true" ? "0" : "-100%")});
     transition: transform 0.3s ease-in-out;
@@ -26,7 +26,7 @@ export const IconContainer = styled.div<Props>`
     top: 18px;
     right: ${({ $isopen }) => ($isopen === "true" ? "-10px" : "-30px")};
     cursor: pointer;
-    color: #333;
+    color: var(--close-open-asidebar-icon);
     transition: color 0.3s ease;
 
     &:hover {

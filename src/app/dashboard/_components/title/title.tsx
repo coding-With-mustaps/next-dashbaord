@@ -12,9 +12,9 @@ const H2 = styled.h2`
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #333;
+    color: var(--main-title-color);
     height: ${HEADER_HEIGHT}px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--sidebar-header-border-color);
 
 `;
 

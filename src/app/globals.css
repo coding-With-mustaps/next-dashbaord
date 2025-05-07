@@ -16,23 +16,45 @@
   font-style: normal;
 }
 
+/* TODO: i should always copy this root to where I'm integrating this dashboard*/
 :root {
   --background: #ffffff;
   --foreground: #171717;
 
-  --link-color: #6198e0;
   --link-hover-color: #1a73e8;
+
+  --link-color: #6198e0;
+  --main-color: #333;
   --link-hover-bgcolor: #f0f4ff;
+  --sidebar-header-background: #fff;
+  --main-title-color: #333;
+  --close-open-asidebar-icon: #333;
+  --sidebar-header-border-color: #ccc;
+  --icons-color: #333;
+  --icons-background: #e2e1e1;
+  --verticalbar-line-color: #e2e1e1;
+  --main-content-background: #e9ecef;
 }
 
+/* TODO: i should always copy this media to where I'm integrating this dashboard*/
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    --sidebar-header-background: #1a2238;
+    --link-color: whitesmoke;
+    --main-color: #whitesmoke;
+    --link-hover-bgcolor: #2c365e;
+    --main-title-color: whitesmoke;
+    --close-open-asidebar-icon: whitesmoke;
+    --sidebar-header-border-color: #2c365e;
+    --icons-color: whitesmoke;
+    --icons-background: #2c365e;
+    --verticalbar-line-color: #2c365e;
+    --main-content-background: #2a2f45;
   }
 }
-
-
 
 body {
   color: var(--foreground);

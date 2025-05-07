@@ -13,6 +13,6 @@ export const Wrapper = styled.main<Props>`
     padding-left: ${({ $isopen }) => $isopen === "true" ? `${ASIDEBAR_WIDTH + 10}px` : "10px"};
     padding-top: ${HEADER_HEIGHT + 5}px;
     padding-bottom: 5px;
-    background-color: #e9ecef;
+    background: var(--main-content-background);
     color: #333;
 `

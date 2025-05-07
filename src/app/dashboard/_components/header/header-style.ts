@@ -12,9 +12,9 @@ export const Container = styled.div<Props>`
     top: 0;
     width: 100%;
     height: ${HEADER_HEIGHT}px;
-    background-color: #fff;
-    color: #333;
-    border-bottom: 1px solid #eaeaea;                                                   // 40px paddingLeft with sidebar is close because of open icon
+    background-color: var(--sidebar-header-background);
+    color: var(--main-color);
+    border-bottom: 1px solid var(--sidebar-header-border-color);                                                   // 40px paddingLeft with sidebar is close because of open icon
     padding-left: ${({ $isopen }) => $isopen === "true" ? `${ASIDEBAR_WIDTH + 20}px` : `40px`}; // 255px is the width of the aside bar
 
     display: flex;
@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
 `;
 
 export const VerticalLine = styled.div`
-    border-right: 2px solid #e2e1e1;
+    border-right: 2px solid var(--verticalbar-line-color);
     padding-right: 10px;
     height: 30px;
 `
@@ -50,9 +50,10 @@ export const VerticalLine = styled.div`
 export const NotifyButton = styled.button`
     padding: 5px;
     border-radius: 4px;
-    background-color: #e2e1e1;
+    background-color: var(--icons-background);
 
     .notifiy-icon {
         font-size: 25px;
+        color: var(--icons-color);
     }
 `

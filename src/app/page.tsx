@@ -1,9 +1,34 @@
+"use client";
 import Image from "next/image";
+import { checkClientTheme, checkClientThemeChange } from "./components/checkClientTheme";
+import { useEffect, useState } from "react";
+import styled from "styled-components";
+
+const Text = styled.div`
+  color: black;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+    font-size: 30px;
+  }
+`
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+ 
+
+  useEffect(() => {
+    if(!isMounted) return;
+
+    checkClientTheme();
+    checkClientThemeChange()
+  }, [isMounted]);
+
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <Text>This is dashboard</Text>
         <Image
           className="dark:invert"
           src="/next.svg"
