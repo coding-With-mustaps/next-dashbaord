@@ -20,7 +20,5 @@ const H2 = styled.h2`
 
 // 'Montserrat'
 export function Title(){
-    return(
-        <H2>Yes</H2>
-    );
+    return <H2>Yes</H2>
 };

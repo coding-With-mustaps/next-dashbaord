@@ -6,8 +6,6 @@ type asidebarState = {
     isOpen: boolean
 };
 
-type Action = "OPEN" | "CLOSE";
-
 type AsidebarContextType = asidebarState & {
     dispatch: React.Dispatch<any>;
 };
