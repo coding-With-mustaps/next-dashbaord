@@ -28,6 +28,12 @@ export const Wrapper = styled.div`
     align-items: center;
     gap: 10px;
 
+    .notification-secion {
+       display: flex;
+       gap: 10px;
+       align-items: center;
+    }
+
     .username-section {
         display: flex;
         align-items: center;
@@ -36,7 +42,7 @@ export const Wrapper = styled.div`
 `;
 
 export const VerticalLine = styled.div`
-    border-right: 2px solid #ccc;
+    border-right: 2px solid #e2e1e1;
     padding-right: 10px;
     height: 30px;
 `
@@ -44,7 +50,7 @@ export const VerticalLine = styled.div`
 export const NotifyButton = styled.button`
     padding: 5px;
     border-radius: 4px;
-    background-color: #ccc;
+    background-color: #e2e1e1;
 
     .notifiy-icon {
         font-size: 25px;
