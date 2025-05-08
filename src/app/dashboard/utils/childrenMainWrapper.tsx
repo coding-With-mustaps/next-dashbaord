@@ -6,5 +6,9 @@ import { Wrapper } from "../layout-styles"
 // TODO: I extract the children wrapper to this component
 export function MainWrapper({ children }: {children: React.ReactNode}){
     const { isOpen } = useAsidebarContext(); //? client action code
-    return <Wrapper $isopen={isOpen ? "true": "false"}>{ children }</Wrapper>
+    return (
+        <Wrapper $isopen={isOpen ? "true": "false"}>
+            { children }
+        </Wrapper>
+    )
 };

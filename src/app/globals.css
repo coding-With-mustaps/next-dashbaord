@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
+/* @font-face{
   font-family: "GeistMono";
   src: url("/fonts/GeistMono-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
@@ -14,7 +14,7 @@
   src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
-}
+} */
 
 /* TODO: i should always copy this root to where I'm integrating this dashboard*/
 :root {
@@ -34,6 +34,10 @@
   --icons-background: #e2e1e1;
   --verticalbar-line-color: #e2e1e1;
   --main-content-background: #e9ecef;
+  --close-button-background: #fb6f92;
+  --close-button-color: #fff;
+  --popup-background: #2a2f45;
+  --popup-color: #fff;
 }
 
 /* TODO: i should always copy this media to where I'm integrating this dashboard*/
@@ -53,6 +57,8 @@
     --icons-background: #2c365e;
     --verticalbar-line-color: #2c365e;
     --main-content-background: #2a2f45;
+    --popup-background: #e9ecef;
+    --popup-color: #333;
   }
 }
 
