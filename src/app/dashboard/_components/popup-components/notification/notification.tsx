@@ -10,7 +10,7 @@ export function NotificationPopup(){
     return(
         <Container $isvisible={context?.isNotifyComOpen}>
             <Wrapper>
-                <h1>Notification</h1>
+                <h1 className="w-full text-center text-2xl font-bold mt-3">Notification</h1>
                 <CloseButtonIcon onClick={() => context?.dispatch({type: NotifySettingAction.CLOSE_NOTIFICATION})}><RiCloseLargeFill className="icon"/></CloseButtonIcon>
             </Wrapper>
         </Container>

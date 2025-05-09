@@ -1,3 +1,4 @@
+import { media } from "@/Global_properties/MediaQuery";
 import { styled, keyframes } from "styled-components";
 
 //TODO: From here || is a shared code with setting popup
@@ -46,6 +47,11 @@ export const Wrapper = styled.div`
     background-color: var(--popup-background);
     color: var(--popup-color);
     border-radius: 5px;
+
+    @media ${media.mobile} {
+      width: 90%;
+      background-color: var(--popup-background-mobile);
+    }
 `
 
 export const CloseButtonIcon = styled.button`

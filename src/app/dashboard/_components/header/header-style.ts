@@ -1,6 +1,7 @@
 "use client";
 import { styled } from "styled-components";
 import { ASIDEBAR_WIDTH, HEADER_HEIGHT } from "../../generalConstants";
+import { media } from "@/Global_properties/MediaQuery";
 
 type Props = {
     $isopen: "true" | "false"
@@ -12,7 +13,7 @@ export const Container = styled.div<Props>`
     top: 0;
     width: 100%;
     height: ${HEADER_HEIGHT}px;
-    // background-color: var(--sidebar-header-background);
+    background-color: var(--sidebar-header-background);
     color: var(--main-color);
     border-bottom: 1px solid var(--sidebar-header-border-color);                                                   // 40px paddingLeft with sidebar is close because of open icon
     padding-left: ${({ $isopen }) => $isopen === "true" ? `${ASIDEBAR_WIDTH + 20}px` : `40px`}; // 255px is the width of the aside bar
@@ -52,8 +53,14 @@ export const NotifyButton = styled.button`
     border-radius: 4px;
     background-color: var(--icons-background);
 
-    .notifiy-icon {
+    .notify-icon {
         font-size: 25px;
         color: var(--icons-color);
+    }
+
+    @media ${media.mobile} {
+        .notify-icon {
+            font-size: 20px;
+        }
     }
 `

@@ -37,7 +37,10 @@
   --close-button-background: #fb6f92;
   --close-button-color: #fff;
   --popup-background: #2a2f45;
+  --popup-background-mobile: #2a2f45;
   --popup-color: #fff;
+  --card-icon-bg: #2a2f45;
+  --card-icon-color: #fff;
 }
 
 /* TODO: i should always copy this media to where I'm integrating this dashboard*/
@@ -58,7 +61,10 @@
     --verticalbar-line-color: #2c365e;
     --main-content-background: #2a2f45;
     --popup-background: #e9ecef;
+    --popup-background-mobile: #fff;
     --popup-color: #333;
+    --card-icon-bg: #2a2f45;
+    --card-icon-color: #fff;
   }
 }
 

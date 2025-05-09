@@ -17,8 +17,8 @@ export default function Header(){
             {/* <Wrapper></Wrapper> */} 
             <Wrapper className="s-wrapper-notify">
                 <div className="notification-secion">
-                    <NotifyButton onClick={() => context?.dispatch({type: NotifySettingAction.OPEN_SETTING})}><IoSettingsOutline className="notifiy-icon"/></NotifyButton>
-                    <NotifyButton onClick={() => context?.dispatch({type: NotifySettingAction.OPEN_NOTIFICATION})}><IoMdNotificationsOutline className="notifiy-icon"/></NotifyButton>
+                    <NotifyButton onClick={() => context?.dispatch({type: NotifySettingAction.OPEN_SETTING})}><IoSettingsOutline className="notify-icon"/></NotifyButton>
+                    <NotifyButton onClick={() => context?.dispatch({type: NotifySettingAction.OPEN_NOTIFICATION})}><IoMdNotificationsOutline className="notify-icon"/></NotifyButton>
                 </div>
                 <VerticalLine></VerticalLine>
                 <div className="username-section">
